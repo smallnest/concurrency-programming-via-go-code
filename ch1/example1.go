@@ -50,5 +50,7 @@ func main() {
 
 	// paramEvaluated()
 	// paramEvaluated2()
-	paramEvaluated3()
+	// paramEvaluated3()
+
+	bench_quicksort()
 }
