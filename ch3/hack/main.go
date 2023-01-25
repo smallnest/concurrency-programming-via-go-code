@@ -23,15 +23,15 @@ type m struct {
 	w           sync.Mutex
 	writerSem   uint32
 	readerSem   uint32
-	readerCount int32
-	readerWait  int32
+	readerCount atomic.Int32
+	readerWait  atomic.Int32
 }
 
 const rwmutexMaxReaders = 1 << 30
 
 func (rw *RWMutex) ReaderCount() int {
 	v := (*m)(unsafe.Pointer(&rw.RWMutex))
-	r := atomic.LoadInt32(&v.readerCount)
+	r := v.readerCount.Load()
 	if r < 0 {
 		r += rwmutexMaxReaders
 	}
@@ -41,7 +41,7 @@ func (rw *RWMutex) ReaderCount() int {
 
 func (rw *RWMutex) ReaderWait() int {
 	v := (*m)(unsafe.Pointer(&rw.RWMutex))
-	c := atomic.LoadInt32(&v.readerWait)
+	c := v.readerWait.Load()
 
 	return int(c)
 }
