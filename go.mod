@@ -1,13 +1,15 @@
 module github.com/smallnest/concurrency-programming-via-go-code
 
-go 1.19
+go 1.20
 
 require (
 	github.com/carlmjohnson/syncx v0.0.0-20220419012352-570dd0acf5f1
+	github.com/julienschmidt/httprouter v1.3.0
 	github.com/kortschak/goroutine v1.0.0
 	github.com/sasha-s/go-deadlock v0.3.1
 	github.com/sourcegraph/conc v0.2.0
 	github.com/stretchr/testify v1.8.1
+	golang.org/x/net v0.0.0-20220526153639-5463443f8c37
 )
 
 require (
