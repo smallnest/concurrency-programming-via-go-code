@@ -9,6 +9,7 @@ require (
 	github.com/sasha-s/go-deadlock v0.3.1
 	github.com/sourcegraph/conc v0.2.0
 	github.com/stretchr/testify v1.8.1
+	golang.org/x/exp v0.0.0-20230213192124-5e25df0256eb
 	golang.org/x/net v0.0.0-20220526153639-5463443f8c37
 )
 
@@ -26,6 +27,6 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sourcegraph/sourcegraph/lib v0.0.0-20221216004406-749998a2ac74 // indirect
-	golang.org/x/sys v0.0.0-20220829200755-d48e67d00261 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
