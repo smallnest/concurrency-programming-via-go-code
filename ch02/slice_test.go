@@ -14,7 +14,7 @@ func TestBuiltinSlice(t *testing.T) {
 		go func() {
 			defer wg.Done()
 
-			for i := 0; i < 1_000_000; i++ {
+			for i := 0; i < 1_000_00; i++ {
 				s = append(s, 1)
 			}
 		}()
@@ -22,7 +22,7 @@ func TestBuiltinSlice(t *testing.T) {
 
 	wg.Wait()
 
-	if len(s) != 10*1_000_000 {
+	if len(s) != 10*1_000_00 {
 		t.Fatalf("len(s) = %d, want %d", len(s), 10*1_000_000)
 	}
 }

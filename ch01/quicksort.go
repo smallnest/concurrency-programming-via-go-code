@@ -92,3 +92,7 @@ func bench_quicksort() {
 	<-done
 	fmt.Println("优化并发执行: ", time.Since(start))
 }
+
+func main() {
+	bench_quicksort()
+}
