@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/smallnest/concurrency-programming-via-go-code/ch9/key2/p1"
-	"github.com/smallnest/concurrency-programming-via-go-code/ch9/key2/p2"
+	"github.com/smallnest/concurrency-programming-via-go-code/ch09/key2/p1"
+	"github.com/smallnest/concurrency-programming-via-go-code/ch09/key2/p2"
 )
 
 func main() {

@@ -6,6 +6,7 @@ require (
 	github.com/carlmjohnson/syncx v0.0.0-20220419012352-570dd0acf5f1
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/kortschak/goroutine v1.0.0
+	github.com/marusama/cyclicbarrier v1.1.0
 	github.com/sasha-s/go-deadlock v0.3.1
 	github.com/sourcegraph/conc v0.2.0
 	github.com/stretchr/testify v1.8.1
