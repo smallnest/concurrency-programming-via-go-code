@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/carlmjohnson/syncx v0.0.0-20220419012352-570dd0acf5f1
+	github.com/fatih/color v1.13.0
 	github.com/go-redis/redis_rate/v10 v10.0.0
 	github.com/juju/ratelimit v1.0.2
 	github.com/julienschmidt/httprouter v1.3.0
@@ -36,6 +37,8 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
